@@ -3,10 +3,10 @@
 namespace Caravan.UnitTest
 {
     [TestClass]
-    public class PackAnimalUnitTest
+    public class PackAnimalUnitTests
     {
         [TestMethod()]
-        public void ItShouldReturnTheCorrectPaceForHorse_GivenInvalidValue()
+        public void ItShouldReturnTheCorrectPaceForHorse_GivenValidAndInvalidValue()
         {
             PackAnimal maxPlusOne = new Horse("willi", 71);
             Assert.AreEqual(70, maxPlusOne.Pace, $"Geschw. {maxPlusOne.Pace} nicht korrekt");
@@ -28,7 +28,7 @@ namespace Caravan.UnitTest
         }
 
         [TestMethod()]
-        public void ItShouldReturnTheCorrectPaceForCamel_GivenInvalidValue()
+        public void ItShouldReturnTheCorrectPaceForCamel_GivenValidAndInvalidValue()
         {
             PackAnimal maxPlusOne = new Camel("willi", 21);
             Assert.AreEqual(20, maxPlusOne.Pace, $"Geschw. {maxPlusOne.Pace} nicht korrekt");
