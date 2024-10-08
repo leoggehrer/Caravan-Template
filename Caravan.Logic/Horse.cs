@@ -6,9 +6,10 @@
         /// Pferd mit Maximalgeschwindigkeit 70 erzeugen
         /// </summary>
         /// <param name="name"></param>
-        /// <param name="mp"></param>
-        public Horse(string name, int mp) 
+        /// <param name="maxPace"></param>
+        public Horse(string name, int maxPace) 
         {
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -18,7 +19,7 @@
         {
             get
             {
-                return -1;
+                throw new NotImplementedException();
             }
         }
 

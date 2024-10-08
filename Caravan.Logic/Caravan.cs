@@ -13,7 +13,7 @@
         {
             get
             {
-                return -1;
+                throw new NotImplementedException();
             }
         }
 
@@ -24,7 +24,7 @@
         {
             get
             {
-                return -1;
+                throw new NotImplementedException();
             }
         }
 
@@ -34,11 +34,11 @@
         /// </summary>
         /// <param name="name">Name des Packtiers</param>
         /// <returns>Packtier</returns>
-        public PackAnimal this[string name]
+        public PackAnimal? this[string name]
         {
             get
             {
-                return null;
+                throw new NotImplementedException();
             }
         }
 
@@ -49,11 +49,11 @@
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
-        public PackAnimal this[int index]
+        public PackAnimal? this[int index]
         {
             get
             {
-                return null;
+                throw new NotImplementedException();
             }
         }
 
@@ -66,7 +66,7 @@
         {
             get
             {
-                return -1;
+                throw new NotImplementedException();
             }
         }
 
@@ -74,17 +74,19 @@
         /// Fügt ein Tragtier in die Karawane ein.
         /// Dem Tragtier wird mitgeteilt, in welcher Karawane es sich nun befindet.
         /// </summary>
-        /// <param name="p">einzufügendes Tragtier</param>
-        public void AddPackAnimal(PackAnimal p)
+        /// <param name="packAnimal">einzufügendes Tragtier</param>
+        public void AddPackAnimal(PackAnimal? packAnimal)
         {
+            throw new NotImplementedException();
         }
 
         /// <summary>
         /// Nimmt das Tragtier o aus dieser Karawane heraus
         /// </summary>
-        /// <param name="p">Tragtier, das die Karawane verläßt</param>
-        public void RemovePackAnimal(PackAnimal p)
+        /// <param name="packAnimal">Tragtier, das die Karawane verläßt</param>
+        public void RemovePackAnimal(PackAnimal packAnimal)
         {
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -92,6 +94,7 @@
         /// </summary>
         public void Unload()
         {
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -102,7 +105,7 @@
         /// <param name="load">Anzahl der Ballen Ladung</param>
         public void AddLoad(int load)
         {
+            throw new NotImplementedException();
         }
-
     }
 }
